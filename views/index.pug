@@ -1,0 +1,108 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Rohit
+  link(href='https://fonts.googleapis.com/css2?family=Ubuntu&display=swap' rel='stylesheet')
+  link(href='./static/index.css', rel='stylesheet')
+nav.navbar.background.nav-height
+  .logo
+    img(src='./static/Images/logo.jpg' alt='logo')
+  .ullist.v-class
+    ul.nav-list
+      list.list
+        a.link.active(href='#home') Home
+      list.list
+        a.link(href='#why') Why Here
+      list.list
+        a.link(href='#MBA') MBA
+      list.list
+        a.link(href='#Master') Master
+      list.list
+        a.link(href='#contact') Registration
+  .search.v-class
+    input.input-box(type='text' placeholder='search')
+    button.button search
+  .burger
+    .line
+    .line
+    .line
+section#home.backgroundhome.firstSection
+  .mainbox
+    .first-half
+      p.big-text The Future of Education is here
+      p.text-small
+        | college degree obtained in Paris can be very valuable, especially if you choose a reputable institution and program that aligns with your career goals. However, the value of any degree also depends on your individual efforts, skills, and how you leverage your education to pursue your desired career path.
+      p
+      button.btn Join us
+      button.btn Trail Classes
+    .secondhalf
+section#why.sec2.glowing-element
+  .sec2container
+    p.sec2tag Build the career with European Degree
+    p.sec2sub
+      | The reputation and ranking of the college or university where you obtain your degree can significantly impact its value. Paris is home to many prestigious universities and institutions, such as the University of Paris (Sorbonne), Sciences Po, and others, which are known for their academic excellence. The specific degree program and field of study you choose can also affect the value of your degree. Some programs are highly regarded in certain industries or for specific career paths. Ensuring that the institution and the program are accredited is crucial. Accreditation ensures that the education you receive meets certain standards and is recognized by employers and other educational institutions. The value of your degree ultimately depends on your career goals and how well it aligns with your chosen field. Some professions require specific degrees or certifications, while others may prioritize experience and skills. Studying in a place like Paris can provide excellent networking opportunities, as it&apos;s often a hub for various industries, including art, fashion, business, and more.
+  img.studentimg.img(src='./static/student.jpg' alt='logo')
+section.sec2.glowing-element.sec-2-2
+  .sec2container
+    p.sec2tag Build the career with European Degree
+    p.sec2sub
+      | The reputation and ranking of the college or university where you obtain your degree can significantly impact its value. Paris is home to many prestigious universities and institutions, such as the University of Paris (Sorbonne), Sciences Po, and others, which are known for their academic excellence. The specific degree program and field of study you choose can also affect the value of your degree. Some programs are highly regarded in certain industries or for specific career paths. Ensuring that the institution and the program are accredited is crucial. Accreditation ensures that the education you receive meets certain standards and is recognized by employers and other educational institutions. The value of your degree ultimately depends on your career goals and how well it aligns with your chosen field. Some professions require specific degrees or certifications, while others may prioritize experience and skills. Studying in a place like Paris can provide excellent networking opportunities, as it&apos;s often a hub for various industries, including art, fashion, business, and more.
+  img.studentimg.img(src='./static/student1.jpg' alt='logo')
+section#MBA.sec2.glowing-element.sec3
+  .sec2container
+    p.sec2tag
+      | Program of Study
+    p.sec2sub
+      | You&apos;re absolutely right; the specific degree program and field of study you choose can significantly impact the value and relevance of your degree. Here are a few key points to consider:
+      br
+      |             Alignment with Career Goals: The most important aspect is whether the program aligns with your career goals and aspirations. If you&apos;re passionate about a particular field, your enthusiasm and dedication can lead to success.
+      br
+      |             Industry Reputation: Some programs and fields have a strong reputation within specific industries. For example, if you&apos;re interested in fashion, studying fashion design or management in a fashion capital like Paris can be highly advantageous.
+      br
+      |             Employability: Consider the job market and demand for professionals in your chosen field. Some fields have a higher demand for skilled workers, leading to better employment prospects.
+      br
+      |             Research Opportunities: If you&apos;re interested in research and academia, certain institutions and programs may offer more research opportunities and resources.
+  img.studentimg.imgg(src='./static/student4.jpg' alt='logo')
+section#Master.sec2.glowing-element.sec4
+  .sec2container
+    p.sec2tag Reputation of the Institution
+    p.sec2sub
+      | Absolutely, the reputation and ranking of the college or university where you obtain your degree are crucial factors that can significantly impact the value of your education. Paris is indeed home to several prestigious and world-renowned institutions, and here are a few notable ones
+      br
+      |             University of Paris (Sorbonne): The University of Paris, often referred to as Sorbonne, has a rich history dating back to the 12th century. It&apos;s known for its excellence in humanities, social sciences, and arts. Obtaining a degree from Sorbonne can be highly regarded in academic and cultural circles.
+      br
+      |             Sciences Po (Institut d&apos;&Eacute;tudes Politiques de Paris): Sciences Po is a prestigious institution specializing in political science and international relations. It has a strong reputation for its social sciences programs and is known for producing influential policymakers and academics.
+      br
+      |             &Eacute;cole Normale Sup&eacute;rieure (ENS): ENS is one of the most selective and prestigious higher education institutions in France. It&apos;s known for its emphasis on research and has produced numerous Nobel laureates and Fields Medalists.
+  img.studentimg.img4(src='./static/student5.jpg' alt='logo')
+section.sec2.glowing-element.sec5
+  .sec2container
+    p.sec2tag Networking Opportunities
+    p.sec2sub
+      | Cultural Diversity in Paris is a diverse and cosmopolitan city, attracting people from all over the world. This diversity can lead to a rich and varied network of individuals from different backgrounds and industries.
+      | Paris is a global hub for various industries such as fashion, art, finance, technology, and more. It hosts numerous international events, conferences, and exhibitions, providing ample opportunities to connect with professionals and experts in your field.
+      | Internship and Job Opportunities in Many multinational companies and renowned institutions have offices or branches in Paris. As a student, you may have access to internships and part-time jobs that can help you build your network while gaining valuable work experience.
+  img.studentimg.imgg(src='./static/student3.jpg' alt='logo')
+section#contact.contact
+  .innercontainer.glass-container
+    h2.text-center Contact Us
+    .form
+      form(action='' method='POST')
+        input#name(type='text' name='name' placeholder='Enter Your Name')
+        input#email(type='email' name='email' placeholder='Enter Your Email')
+        input#Phone-number(type='number' name=' Phone-number' placeholder='Enter Your Phone number')
+        textarea#text.texarea(name='text' cols='105' rows='10' placeholder='Ellaborate Your Concern')
+        button.btnform.glass-container Submit
+footer.footer.background &copy; 2023 R-Education. All Rights Reserved
+script(src='./static/index.js')
+script(src='./static/logic.js')
+script(src='https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js')
+script.
+  var typed = new Typed('.big-text', {
+  strings: ["The Future of Education is here", "Start Your Journey With Paris Degree"],
+  typeSpeed: 100,
+  backSpeed: 50,
+  loop:true
+  });
+script.

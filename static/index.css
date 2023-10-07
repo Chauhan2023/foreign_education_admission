@@ -1,0 +1,425 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2&display=swap");
+@import url("https://fonts.cdnfonts.com/css/amazon-ember");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+.background {
+  background: rgba(0, 0, 0, 0.7) url(dell.jpg);
+  background-size: cover;
+  background-blend-mode: darken;
+}
+.navbar {
+  position: sticky;
+  position: sticky;
+    top: 0;
+    z-index: 100;
+  display: flex;
+  flex-direction: row;
+  /* background-color: aqua; */
+  /* justify-content: space-between; */
+  height: 60px;
+  
+  font-family: "Amazon Ember", sans-serif;
+}
+.logo img {
+  display: block;
+  /* background-color: black; */
+
+  height: 60px;
+  border-radius: 30px;
+  width: 60px;
+  padding: 2px;
+}
+.ullist {
+  margin: auto;
+  /* background-color: yellow; */
+  
+}
+.nav-list {
+  margin: auto;
+}
+
+.list {
+  font-size: 20px;
+
+  font-family: "Amazon Ember", sans-serif;
+  font-weight: 500;
+  transition: 0.3s all ease-in-out;
+}
+a {
+  list-style-type: none;
+  text-decoration: none;
+  padding: 10px;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.list {
+  font-size: 1.9vw;
+  padding: 5px;
+  transition: 0.5s all ease-in-out;
+}
+
+.search {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+.burger {
+  display: none;
+  position: absolute;
+  top: 15px;
+  right: 5%;
+  cursor: pointer;
+  margin: 5px;
+}
+.line {
+  width: 33px;
+  background-color: white;
+  height: 4px;
+  margin: 3px;
+  border-radius: 5px;
+}
+.input-box {
+  margin: 5px;
+  width: 60%;
+  height: 25px;
+  font-size: 15px;
+  /* Change the border color on focus */
+  outline: none;
+  border: none;
+  transition: 0.2s all ease-in-out;
+  text-align: center;
+  border-radius: 20px;
+  font-family: "Amazon Ember", sans-serif;
+}
+.input-box:focus {
+  /* Change the border color on focus */
+  transform: scale(1.05);
+  border-radius: 10px;
+}
+.button {
+  font-size: 14px;
+  background-color: white;
+  border: none;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 0.3s all ease-in-out;
+  font-family: "Amazon Ember", sans-serif;
+}
+.button:hover {
+  opacity: 0.8;
+}
+
+.active {
+  color: white;
+}
+
+.firstSection {
+    position: relative;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7) url(./Images/dell.jpg) no-repeat no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: darken;
+}
+
+.first-half {
+    position: absolute;
+    top: 50%; /* Move the element 50% down from the top of its parent */
+    left: 50%; /* Move the element 50% from the left of its parent */
+    transform: translate(-50%, -50%); 
+  text-align: center;
+}
+
+.big-text {
+  height: 20vh;
+    position: relative;
+  font-size: 50px;
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+}
+.text-small {
+  font-size: 15px;
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.btn {
+  font-size: 20px;
+  margin: 5px;
+  text-align: center;
+  padding: 10px;
+  background-color: whitesmoke;
+  color: black;
+  border-radius: 10px;
+  border: none;
+  transition: 0.3 all ease-in-out;
+  backdrop-filter: blur(10px);
+  font-family: "Amazon Ember", sans-serif;
+}
+
+.btn:hover {
+  background-color: white;
+  box-shadow: 5px 5px 10px rgba(50%, 75%, 100%, 0.5);
+}
+/* Customize the scrollbar track (the area where the scrollbar moves) */
+::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+  background-color: #f5f5f5; /* Background color of the track */
+}
+
+/* Customize the scrollbar thumb (the draggable part of the scrollbar) */
+::-webkit-scrollbar-thumb {
+  background-color: rgb(150, 149, 149); /* Color of the thumb */
+  border-radius: 5px; /* Rounded corners for the thumb */
+}
+
+/* Customize the scrollbar thumb on hover */
+::-webkit-scrollbar-thumb:hover {
+  width: 10px;
+  background-color: grey; /* Color of the thumb on hover */
+}
+
+/* Customize the scrollbar track when it's pressed */
+::-webkit-scrollbar-thumb:active {
+  width: 10px;
+  background-color: rgb(205, 205, 205);
+  /* Color of the thumb when pressed */
+}
+
+.sec2 {
+  display: flex;
+  width: 80%;
+  margin: 20px auto;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.glowing-element {
+  animation: glow 2s infinite;
+}
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px rgba(90, 192, 255, 0.7);
+  }
+  50% {
+    box-shadow: 0 0 14px rgba(87, 191, 255, 0.7);
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(106, 198, 255, 0.7);
+  }
+}
+.sec2container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 15px;
+  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+}
+.sec2tag {
+  font-size: 50px;
+  color: black;
+  font-family: "Ubuntu", sans-serif;
+  margin-bottom: 10px;
+}
+.sec2sub {
+  text-align: justify;
+  font-family: "Amazon Ember", sans-serif;
+}
+.studentimg {
+  height: 250px;
+  width: 250px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  display: block;
+  margin: auto;
+  margin-top: 90px;
+}
+
+.sec-2-2 {
+  flex-direction: row-reverse;
+}
+.sec4 {
+  flex-direction: row-reverse;
+}
+
+.contact {
+  background-color: white;
+  padding: 15px;
+}
+.innercontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f6f5f4;
+  height: 80vh;
+  max-width: 80%;
+  margin: auto;
+}
+.text-center {
+  text-align: center;
+  font-size: 35px;
+}
+
+.form {
+  width: 90%;
+  margin: auto;
+}
+.form input {
+  margin: 15px 0;
+  width: 100%;
+  padding: 5px;
+  font-size: 17px;
+  border-radius: 5px;
+  border: 2px solid grey;
+  font-family: "Amazon Ember", sans-serif;
+}
+
+.glass-container {
+  background: rgba(255, 255, 255, 0.4); /* Translucent white background */
+  border-radius: 10px;
+  padding: 20px;
+  backdrop-filter: blur(10px); /* Apply a blur effect */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+  text-align: center;
+}
+
+.btnform {
+  padding: 5px;
+  margin: 5px;
+  font-size: 20px;
+  border: 2px solid grey;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.btnform:hover {
+  background-color: rgb(217, 217, 217);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+}
+.texarea {
+  border-radius: 10px;
+  padding: 10px;
+  width: 90%;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  color: white;
+}
+
+
+
+@media only screen and (max-width: 928px){
+    .img {
+        margin-top: 250px;
+    }
+    
+      .imgg {
+        margin-top: 168px;
+      }
+      .img4 {
+        margin-top: 200px;
+      }
+      .innercontainer {
+        height: 80vh;
+    }
+    .big-text{
+      height: 30vh;
+    }
+}
+
+
+@media only screen and (max-width: 839px) {
+    .sec2 {
+      width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img {
+        margin: 10px;
+      }
+    
+      .imgg {
+        margin: 10px;
+      }
+      .img4 {
+        margin: 10px;
+      }
+
+      .studentimg{
+        width:70%;
+      }
+}
+
+@media only screen and (max-width:678px){
+    .nav-height {
+        width: 100vw;
+    }
+    .form { 
+        width: 90%;
+    }
+
+    .innercontainer{
+        height: 68vh;
+    }
+    .texarea {
+        
+        width: 90%;
+    }
+    .sec2tag {
+        font-size: 30px;
+
+    }
+    .firstSection {
+        /* position: relative; */
+        height: 100vh;
+    }
+    .big-text {
+        font-size: 40px;
+    }
+    
+}
+
+
+@media screen and (max-width:720px){
+  .navbar{
+    flex-direction: column;
+    height: 22vh;
+    align-items: center;
+    transition: all 0.2s ;
+  }
+  .nav-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ullist{
+    opacity:1;
+    transition: all 0.4s ;
+  }
+  .v-class{
+    opacity:0;
+    transition: all 0.4s ;
+  }
+
+  .burger{
+    display: block;
+  }
+
+  .nav-height{
+    height: 6vh;
+  }
+}
